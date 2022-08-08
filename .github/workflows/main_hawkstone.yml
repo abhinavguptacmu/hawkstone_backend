@@ -60,4 +60,4 @@ jobs:
         with:
           app-name: 'Hawkstone'
           slot-name: 'Production'
-          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_9989528D37C24615A241EC418F40C7C9 }}
+          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_883F4DBA0C9C4EBC91C15B83F995B24A }}
