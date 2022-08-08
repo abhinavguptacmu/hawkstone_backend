@@ -23,6 +23,9 @@ def favicon():
     return send_from_directory(os.path.join(app.root_path, 'static'),
                           'favicon.ico',mimetype='image/vnd.microsoft.icon')
 
+@app.route('/')
+def home():
+    return {"hello": "world"}
 
 class Job(Resource):
 
@@ -40,5 +43,5 @@ class Job(Resource):
 api.add_resource(Job, "/<string:order_id>")
 
 if __name__ == "__main__":
-    app.run(debug="True")
+    app.run()
     
